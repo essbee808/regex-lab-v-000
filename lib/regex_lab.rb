@@ -1,17 +1,31 @@
-def starts_with_a_vowel?(word)
+word = ["afoot", "Excellent", "incredible", "Absolute", "unreal", "Inconceivable", "octopus", "chandoo", "Crenel", "crooked", "Flimsy", "folksy", "Dog", "Hermit", "makeshift", "Palazzi", "sixfold", "Truth"]
 
+text = "unreal hunting love Imagining unending Ball. Love! Okay?"
+
+def starts_with_a_vowel?(word)
+  if "#{word}".match(/\b[aeiouAEIOU][a-zA-Z]{2,}/)
+   return true
+  else 
+   return false
+ end
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-
+  new_array = "#{text}".scan(/\b[un][a-zA-Z]{1,}[ing]/)
+  return new_array
 end
 
 def words_five_letters_long(text)
-
+  five_words = "#{text}".scan(/\b[a-zA-Z]{5}\b/)
+  return five_words
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-
+  if "#{text}".match(/^[A-Z][a-z]{1,}/) && "#{text}".match(/\b[!.?]/)
+    return true
+  else
+    return false
+  end
 end
 
 def valid_phone_number?(phone)
