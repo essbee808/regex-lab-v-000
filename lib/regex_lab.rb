@@ -17,7 +17,7 @@ end
 
 def words_five_letters_long(text)
   five_letters = "#{text}".scan(/\b[a-zA-Z]{5}\b/)
-  return correct_punctuation
+  return five_letters
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
