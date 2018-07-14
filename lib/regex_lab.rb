@@ -1,6 +1,6 @@
 word = ["afoot", "Excellent", "incredible", "Absolute", "unreal", "Inconceivable", "octopus", "chandoo", "Crenel", "crooked", "Flimsy", "folksy", "Dog", "Hermit", "makeshift", "Palazzi", "sixfold", "Truth"]
 
-text = "unreal hunting love Imagining unending Ball. Love! Okay?"
+text = "I love going to the movies."
 
 def starts_with_a_vowel?(word)
   if "#{word}".match(/\b[aeiouAEIOU][a-zA-Z]{2,}/)
