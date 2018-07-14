@@ -11,7 +11,7 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  new_array = "#{text}".scan(/\b[un][a-zA-Z]{1,}[ing]/)
+  new_array = "#{text}".match(/\b[un][a-zA-Z]{1,}[ing]/)
   return new_array
 end
 
